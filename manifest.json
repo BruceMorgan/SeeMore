@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Asana See More Extension",
+    "version": "0.10",
+    "description": "Automatically click the 'See More' button in Asana",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://app.asana.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
